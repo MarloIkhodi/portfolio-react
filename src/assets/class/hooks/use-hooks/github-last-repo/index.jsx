@@ -24,7 +24,7 @@ export default function GitHubLastRepo() {
     <div>
       {repoUrl ? (
         <a href={repoUrl} target="_blank">
-          <p>&nbsp;{lastRepo}</p>
+          <p>{lastRepo}</p>
         </a>
       ) : (
         <a href="https://github.com/MarloIkhodi" target="_blank">

@@ -23,7 +23,8 @@ export default function Hero() {
           <div className={styles.workingOn}>
             <img src={Rectangle} alt="Status" />
             <p>
-              Currently working on <GitHubLastRepo />
+              Currently working on&nbsp;
+              <GitHubLastRepo />
             </p>
           </div>
         </section>
