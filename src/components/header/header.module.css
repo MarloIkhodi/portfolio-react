@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
 :root {
     --purple-color: #C778DD;
     --white-color: #FFFFFF;
@@ -36,6 +38,7 @@
 }
 
 .headerTitle p {
+    font-family: "Fira Code", monospace;
     font-size: 16px;
     font-weight: 700;
     color: var(--white-color);
@@ -66,6 +69,7 @@
     align-items: center;
     gap: 4px;
     color: var(--gray-color);
+    font-family: "Fira Code", monospace;
     font-size: 16px;
     font-weight: 600;
 }
