@@ -1,6 +1,10 @@
 export { default as ChevronDown } from "./chevron-down.svg";
 export { default as Background } from "./background.svg";
+export { default as BackgroundFull } from "./background-full.svg";
 export { default as Logotype } from "./logotype.svg";
 export { default as Dribble } from "./dribble.svg";
 export { default as Github } from "./github.svg";
 export { default as Figma } from "./figma.svg";
+export { default as Linkedin } from "./linkedin.svg";
+export { default as MenBlack } from "./men-black.svg";
+export { default as Rectangle } from "./rectangle.svg";

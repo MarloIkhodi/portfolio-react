@@ -7,7 +7,7 @@ export default function Header() {
       <header className={styles.headerContainer}>
         <div className={styles.headerTitle}>
           <img src={Logotype} alt="Logotype" />
-          <p>Marlo, the Dev</p>
+          <p>Marlo, the front-end</p>
         </div>
         <nav className={styles.headerNav}>
           <a href="#">
