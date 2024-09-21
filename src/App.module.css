@@ -15,19 +15,23 @@
 
 .headerContainer {
     width: 1024px;
-    height: 61px;
+    height: 53px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-
+    padding-bottom: 8px;
 }
 
 .headerTitle {
-    width: 100%;
+    height: 21px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
+}
+
+.headerTitle p {
+    margin: 0px;
 }
 
 .headerTitle img {
@@ -38,4 +42,41 @@
 .headerTitle p {
     font-size: 16px;
     font-weight: 700;
+    color: var(--white-color);
+}
+
+.headerNav {
+    display: flex;
+    align-items: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.headerNav a {
+    text-decoration: none;
+}
+
+.headerNav p {
+    margin: 0px;
+    color: var(--gray-color);
+    font-weight: 400;
+}
+
+.headerNav a span {
+    color: var(--purple-color);
+}
+
+.headerNav button {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+}
+
+.headerNav button p {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--gray-color);
+    font-size: 16px;
+    font-weight: 600;
 }

@@ -1,26 +1,44 @@
 import styles from "./App.module.css";
-import LogoDefault from "./assets/images/logotype.svg";
-import Chevrondown from "./assets/images/chevron-down.svg";
+import { ChevronDown, Logotype, Background } from "./assets/images";
 
 export default function App() {
   return (
     <div className={styles.portfolioContainer}>
       <header className={styles.headerContainer}>
         <div className={styles.headerTitle}>
-          <img src={LogoDefault} alt="Logotype" />
-          <p>Elias</p>
+          <img src={Logotype} alt="Logotype" />
+          <p>Marlo</p>
         </div>
-        <nav>
-          <a href="#">#home</a>
-          <a href="#">#works</a>
-          <a href="#">#about-me</a>
-          <a href="#">#contact</a>
+        <nav className={styles.headerNav}>
+          <a href="#">
+            <p>
+              <span>#</span>home
+            </p>
+          </a>
+          <a href="#">
+            <p>
+              <span>#</span>works
+            </p>
+          </a>
+          <a href="#">
+            <p>
+              <span>#</span>about-me
+            </p>
+          </a>
+          <a href="#">
+            <p>
+              <span>#</span>contact
+            </p>
+          </a>
           <button>
-            EN
-            <img src={Chevrondown} alt="" />
+            <p>
+              EN
+              <img src={ChevronDown} alt="" />
+            </p>
           </button>
         </nav>
       </header>
+      <div className={styles.heroContainer}></div>
     </div>
   );
 }
