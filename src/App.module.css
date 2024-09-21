@@ -1,0 +1,41 @@
+:root {
+    --purple-color: #C778DD;
+    --white-color: #FFFFFF;
+    --gray-color: #ABB2BF;
+    --background-color: #282C33;
+}
+
+.portfolioContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+.headerContainer {
+    width: 1024px;
+    height: 61px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.headerTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.headerTitle img {
+    width: 16px;
+    height: 16px;
+}
+
+.headerTitle p {
+    font-size: 16px;
+    font-weight: 700;
+}
