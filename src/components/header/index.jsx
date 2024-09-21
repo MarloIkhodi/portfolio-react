@@ -1,5 +1,5 @@
 import styles from "./header.module.css";
-import { ChevronDown, Logotype, Background } from "../../assets/images";
+import { ChevronDown, Logotype } from "../../assets/images";
 
 export default function Header() {
   return (
@@ -7,7 +7,7 @@ export default function Header() {
       <header className={styles.headerContainer}>
         <div className={styles.headerTitle}>
           <img src={Logotype} alt="Logotype" />
-          <p>Marlo</p>
+          <p>Marlo, the Dev</p>
         </div>
         <nav className={styles.headerNav}>
           <a href="#">
