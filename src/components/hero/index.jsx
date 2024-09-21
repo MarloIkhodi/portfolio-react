@@ -1,4 +1,5 @@
 import styles from "./hero.module.css";
+import { GitHubLastRepo } from "../../assets/class/hooks";
 import { MenBlack, Rectangle } from "../../assets/images";
 
 export default function Hero() {
@@ -19,16 +20,10 @@ export default function Hero() {
         </section>
         <section className={styles.heroImage}>
           <img src={MenBlack} alt="Men in black" />
-          <div>
+          <div className={styles.workingOn}>
             <img src={Rectangle} alt="Status" />
             <p>
-              Currently working on{" "}
-              <a
-                href="https://github.com/MarloIkhodi/portfolio-react"
-                target="_blank"
-              >
-                Portifolio
-              </a>
+              Currently working on <GitHubLastRepo />
             </p>
           </div>
         </section>
