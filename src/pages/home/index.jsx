@@ -1,6 +1,5 @@
 import { Header, Aside, Hero } from "../../components";
 import styles from "./home.module.css";
-import { BackgroundFull } from "../../assets/images";
 
 export default function Home() {
   return (
