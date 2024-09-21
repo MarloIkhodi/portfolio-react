@@ -31,10 +31,8 @@ export default function Header() {
             </p>
           </a>
           <button>
-            <p>
-              EN
-              <img src={ChevronDown} alt="" />
-            </p>
+            <p>EN</p>
+            <img src={ChevronDown} alt="" />
           </button>
         </nav>
       </header>

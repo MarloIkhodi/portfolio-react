@@ -54,20 +54,24 @@
 .headerNav p {
     color: var(--gray-color);
     font-weight: 400;
+    font-family: "Fira Code", monospace;
+    font-size: 16px;
 }
 
 .headerNav a span {
     color: var(--purple-color);
+    font-family: "Fira Code", monospace;
+    font-size: 16px;
 }
 
 .headerNav button {
     background-color: transparent;
-}
-
-.headerNav button p {
     display: flex;
     align-items: center;
     gap: 4px;
+}
+
+.headerNav button p {
     color: var(--gray-color);
     font-family: "Fira Code", monospace;
     font-size: 16px;
