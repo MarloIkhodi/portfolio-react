@@ -60,7 +60,7 @@
     font-size: 16px;
 }
 
-.headerNav a span {
+.headerNav span {
     color: var(--purple-color);
     font-family: "Fira Code", monospace;
     font-size: 16px;

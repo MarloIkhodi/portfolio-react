@@ -1,5 +1,6 @@
 import styles from "./header.module.css";
 import { ChevronDown, Logotype } from "../../assets/images";
+import { Link } from "react-router-dom";
 
 export default function Header({
   home = null,
@@ -15,26 +16,26 @@ export default function Header({
           <p>Marlo, the front-end</p>
         </div>
         <nav className={styles.headerNav}>
-          <a className={styles[home]} href="#">
+          <Link to="/" className={styles[home]}>
             <p>
               <span>#</span>home
             </p>
-          </a>
-          <a className={styles[works]} href="#">
+          </Link>
+          <Link to="/work" className={styles[works]}>
             <p>
               <span>#</span>works
             </p>
-          </a>
-          <a className={styles[aboutMe]} href="#">
+          </Link>
+          <Link className={styles[aboutMe]}>
             <p>
               <span>#</span>about-me
             </p>
-          </a>
-          <a className={styles[contact]} href="#">
+          </Link>
+          <Link className={styles[contact]}>
             <p>
               <span>#</span>contact
             </p>
-          </a>
+          </Link>
           <button>
             <p>EN</p>
             <img src={ChevronDown} alt="" />
