@@ -58,6 +58,15 @@
     font-weight: 400;
     font-family: "Fira Code", monospace;
     font-size: 16px;
+    transition-duration: 0.3s
+}
+
+.headerNav p:hover {
+    color: var(--white-color);
+    transition-duration: 0.3s;
+    font-weight: 500;
+    font-family: "Fira Code", monospace;
+    font-size: 16px;
 }
 
 .headerNav span {
@@ -80,11 +89,25 @@
     font-weight: 600;
 }
 
-.Page p {
+.headerNav button :hover {
+    text-decoration: none;
+    color: var(--gray-color);
+    font-family: "Fira Code", monospace;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.home p,
+.work p,
+.aboutMe p,
+.contact p {
     color: var(--white-color);
     font-weight: 500;
 }
 
-.Page span {
+.home span,
+.work span,
+.aboutMe span,
+.contact span {
     color: var(--purple-color);
 }
