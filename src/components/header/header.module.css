@@ -79,3 +79,12 @@
     font-size: 16px;
     font-weight: 600;
 }
+
+.Page p {
+    color: var(--white-color);
+    font-weight: 500;
+}
+
+.Page span {
+    color: var(--purple-color);
+}

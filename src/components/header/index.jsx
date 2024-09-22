@@ -1,7 +1,12 @@
 import styles from "./header.module.css";
 import { ChevronDown, Logotype } from "../../assets/images";
 
-export default function Header() {
+export default function Header({
+  home = null,
+  works = null,
+  aboutMe = null,
+  contact = null,
+}) {
   return (
     <div className={styles.portfolioContainer}>
       <header className={styles.headerContainer}>
@@ -10,22 +15,22 @@ export default function Header() {
           <p>Marlo, the front-end</p>
         </div>
         <nav className={styles.headerNav}>
-          <a href="#">
+          <a className={styles[home]} href="#">
             <p>
               <span>#</span>home
             </p>
           </a>
-          <a href="#">
+          <a className={styles[works]} href="#">
             <p>
               <span>#</span>works
             </p>
           </a>
-          <a href="#">
+          <a className={styles[aboutMe]} href="#">
             <p>
               <span>#</span>about-me
             </p>
           </a>
-          <a href="#">
+          <a className={styles[contact]} href="#">
             <p>
               <span>#</span>contact
             </p>
