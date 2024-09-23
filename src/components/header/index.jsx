@@ -1,13 +1,11 @@
 import styles from "./header.module.css";
-import { ChevronDown, Logotype } from "../../assets/images";
-import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+import { Logotype } from "../../assets/images";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
-  let location = useLocation();
-  console.log(location.pathname);
-  const current =
-    location.pathname === "/" ? "home" : location.pathname.replace(/\//g, "");
+  const location = useLocation();
+  // console.log(location.pathname);
+  const current = location.pathname.replace(/\//g, "");
   return (
     <div className={styles.portfolioContainer}>
       <header className={styles.headerContainer}>
@@ -16,7 +14,7 @@ export default function Header() {
           <p>Marlo, the front-end dev</p>
         </div>
         <nav className={styles.headerNav}>
-          <Link to="/" className={current === "home" ? styles[current] : null}>
+          <Link to="/" className={current === "" ? styles.home : null}>
             <p>
               <span>#</span>home
             </p>

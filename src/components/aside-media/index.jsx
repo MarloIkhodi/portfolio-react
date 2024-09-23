@@ -1,5 +1,5 @@
 import styles from "./aside.module.css";
-import { Figma, Github, Linkedin } from "../../assets/images";
+import { Github, Linkedin } from "../../assets/images";
 
 export default function Aside() {
   return (
