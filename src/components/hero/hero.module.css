@@ -87,9 +87,15 @@
 .workingOn p {
     display: flex;
     flex-direction: row;
+    transition-duration: 0.3s;
 }
 
 .heroImage a {
     color: var(--white-color);
     font-weight: 600;
+}
+
+.workingOn p :hover {
+    color: var(--purple-color);
+    transition-duration: 0.3s;
 }

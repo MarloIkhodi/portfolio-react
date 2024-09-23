@@ -1,4 +1,4 @@
-import { Home, Work } from "./pages";
+import { Home, Work, About, Contact } from "./pages";
 import { Header, Aside } from "./components";
 import styles from "./App.module.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -11,6 +11,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/work" element={<Work />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

@@ -75,7 +75,7 @@
     font-size: 16px;
 }
 
-.headerNav button {
+/* .headerNav button {
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -95,11 +95,11 @@
     font-family: "Fira Code", monospace;
     font-size: 16px;
     font-weight: 600;
-}
+} */
 
 .home p,
 .work p,
-.aboutMe p,
+.about p,
 .contact p {
     color: var(--white-color);
     font-weight: 500;
@@ -107,7 +107,7 @@
 
 .home span,
 .work span,
-.aboutMe span,
+.about span,
 .contact span {
     color: var(--purple-color);
 }

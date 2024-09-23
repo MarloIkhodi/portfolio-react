@@ -29,20 +29,26 @@ export default function Header() {
               <span>#</span>works
             </p>
           </Link>
-          <Link className={current === "aboutMe" ? styles[current] : null}>
+          <Link
+            to="/about"
+            className={current === "about" ? styles[current] : null}
+          >
             <p>
               <span>#</span>about-me
             </p>
           </Link>
-          <Link className={current === "contact" ? styles[current] : null}>
+          <Link
+            to="/contact"
+            className={current === "contact" ? styles[current] : null}
+          >
             <p>
               <span>#</span>contact
             </p>
           </Link>
-          <button>
+          {/* <button>
             <p>EN</p>
             <img src={ChevronDown} alt="" />
-          </button>
+          </button> */}
         </nav>
       </header>
     </div>
