@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
-
 :root {
     --purple-color: #C778DD;
     --white-color: #FFFFFF;
     --gray-color: #ABB2BF;
-    --background-color: #282C33;
-    --main-background-color: #2C3036;
-}
-
-.homeContainer {
-    background-color: var(--background-color);
+    --background-color: #2C3036;
 }

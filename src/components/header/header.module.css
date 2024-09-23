@@ -4,8 +4,7 @@
     --purple-color: #C778DD;
     --white-color: #FFFFFF;
     --gray-color: #ABB2BF;
-    --background-color: #282C33;
-    --main-background-color: #2C3036;
+    --background-color: #2C3036;
 }
 
 .portfolioContainer {
@@ -23,7 +22,6 @@
     justify-content: space-between;
     align-items: flex-end;
     padding-bottom: 8px;
-    background-color: var(--main-background-color);
 }
 
 .headerTitle {
