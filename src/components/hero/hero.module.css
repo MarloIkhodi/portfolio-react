@@ -54,12 +54,20 @@
 .heroText button {
     background-color: transparent;
     border: 1px solid var(--purple-color);
-    height: 37px;
-    width: 148px;
+    height: auto;
+    width: auto;
+    padding: 8px 16px;
     font-family: "Fira Code", monospace;
     color: var(--white-color);
     font-size: 16px;
     font-weight: 500;
+    transition-duration: 0.3s
+}
+
+.heroText button:hover {
+    background-color: #c778dd33;
+    transition-duration: 0.3s;
+
 }
 
 .heroImage {

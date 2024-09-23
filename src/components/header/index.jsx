@@ -13,7 +13,7 @@ export default function Header() {
       <header className={styles.headerContainer}>
         <div className={styles.headerTitle}>
           <img src={Logotype} alt="Logotype" />
-          <p>Marlo, the front-end</p>
+          <p>Marlo, the front-end dev</p>
         </div>
         <nav className={styles.headerNav}>
           <Link to="/" className={current === "home" ? styles[current] : null}>
