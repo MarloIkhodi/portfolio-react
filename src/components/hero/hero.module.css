@@ -7,15 +7,16 @@
     --background-color: #2C3036;
 }
 
-.heroContainer {
+.portfolioContainer {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--background-color);
+    font-family: "Fira Code", monospace;
 }
 
-.heroSection {
+.heroContainer {
     height: 423px;
     width: 1024px;
     padding-top: 62px;
@@ -24,34 +25,33 @@
     gap: 18px;
 }
 
-.heroText {
+.heroSection {
     width: 537px;
     height: 227px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-top: 74px;
 }
 
-.heroText h2 {
-    font-family: "Fira Code", monospace;
+.heroSection h2 {
     color: var(--white-color);
     font-weight: 600;
     font-size: 32px;
 }
 
-.heroText span {
+.heroSection span {
     color: var(--purple-color);
 }
 
-.heroText>p {
-    font-family: "Fira Code", monospace;
+.heroSection>p {
     color: var(--gray-color);
     line-height: 25px;
     font-size: 16px;
     margin: 32px 0 24px;
 }
 
-.heroText button {
+.heroSection button {
     background-color: transparent;
     border: 1px solid var(--purple-color);
     height: auto;
@@ -64,7 +64,7 @@
     transition-duration: 0.3s
 }
 
-.heroText button:hover {
+.heroSection button:hover {
     background-color: #c778dd33;
     transition-duration: 0.3s;
 
@@ -76,7 +76,7 @@
     align-items: center;
 }
 
-.workingOn {
+.heroImage>div {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -84,13 +84,12 @@
     width: auto;
     height: 21px;
     border: 1px solid var(--gray-color);
-    font-family: "Fira Code", monospace;
     font-size: 16px;
     font-weight: 500;
     color: var(--gray-color);
 }
 
-.workingOn p {
+.heroImage div>p {
     display: flex;
     flex-direction: row;
     transition-duration: 0.3s;
@@ -101,7 +100,7 @@
     font-weight: 600;
 }
 
-.workingOn p :hover {
+.heroImage div>p :hover {
     color: var(--purple-color);
     transition-duration: 0.3s;
 }

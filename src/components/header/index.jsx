@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <div className={styles.portfolioContainer}>
       <header className={styles.headerContainer}>
-        <div className={styles.headerTitle}>
+        <div>
           <img src={Logotype} alt="Logotype" />
           <p>Marlo, the front-end dev</p>
         </div>

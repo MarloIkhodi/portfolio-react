@@ -13,6 +13,7 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--background-color);
+    font-family: "Fira Code", monospace;
 }
 
 .headerContainer {
@@ -24,7 +25,7 @@
     padding-bottom: 8px;
 }
 
-.headerTitle {
+.headerContainer div {
     height: 21px;
     display: flex;
     justify-content: center;
@@ -32,13 +33,12 @@
     gap: 8px;
 }
 
-.headerTitle img {
+.headerContainer div img {
     width: 16px;
     height: 16px;
 }
 
-.headerTitle p {
-    font-family: "Fira Code", monospace;
+.headerContainer div p {
     font-size: 16px;
     font-weight: 700;
     color: var(--white-color);
@@ -54,7 +54,6 @@
 .headerNav p {
     color: var(--gray-color);
     font-weight: 400;
-    font-family: "Fira Code", monospace;
     font-size: 16px;
     transition-duration: 0.3s
 }
@@ -63,13 +62,11 @@
     color: var(--white-color);
     transition-duration: 0.3s;
     font-weight: 500;
-    font-family: "Fira Code", monospace;
     font-size: 16px;
 }
 
 .headerNav span {
     color: var(--purple-color);
-    font-family: "Fira Code", monospace;
     font-size: 16px;
 }
 
@@ -82,7 +79,6 @@
 
 .headerNav button p {
     color: var(--gray-color);
-    font-family: "Fira Code", monospace;
     font-size: 16px;
     font-weight: 600;
 }
@@ -90,7 +86,6 @@
 .headerNav button :hover {
     text-decoration: none;
     color: var(--gray-color);
-    font-family: "Fira Code", monospace;
     font-size: 16px;
     font-weight: 600;
 } */

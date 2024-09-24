@@ -4,9 +4,9 @@ import { MenBlack, Rectangle } from "../../assets/images";
 
 export default function Hero() {
   return (
-    <div className={styles.heroContainer}>
-      <main className={styles.heroSection}>
-        <section className={styles.heroText}>
+    <div className={styles.portfolioContainer}>
+      <main className={styles.heroContainer}>
+        <section className={styles.heroSection}>
           <h2>
             Marlo is a <span>web designer</span> and <span>front-end developer</span>
           </h2>
@@ -21,7 +21,7 @@ export default function Hero() {
         </section>
         <section className={styles.heroImage}>
           <img src={MenBlack} alt="Men in black" />
-          <div className={styles.workingOn}>
+          <div>
             <img src={Rectangle} alt="Status" />
             <p>
               Currently working on&nbsp;
