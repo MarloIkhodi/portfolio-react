@@ -11,7 +11,7 @@ export default function Header() {
       <header className={styles.headerContainer}>
         <div>
           <img src={Logotype} alt="Logotype" />
-          <p>Marlo, the front-end dev</p>
+          <h1>Marlo, the front-end dev</h1>
         </div>
         <nav className={styles.headerNav}>
           <Link to="/" className={current === "" ? styles.home : null}>

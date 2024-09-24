@@ -27,7 +27,7 @@
     height: 16px;
 }
 
-.headerContainer div p {
+.headerContainer div h1 {
     font-size: 16px;
     font-weight: 700;
     color: var(--white-color);

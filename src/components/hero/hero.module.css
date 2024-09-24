@@ -1,5 +1,4 @@
 .portfolioContainer {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,21 +7,19 @@
 }
 
 .heroContainer {
-    height: 423px;
     width: 1024px;
     padding-top: 62px;
     padding-bottom: 112px;
     display: flex;
-    gap: 18px;
+    justify-content: space-between;
 }
 
 .heroSection {
     width: 537px;
-    height: 227px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 74px;
+    justify-content: start;
+    padding-top: 74px;
 }
 
 .heroSection h2 {
@@ -39,7 +36,7 @@
     color: var(--gray-color);
     line-height: 25px;
     font-size: 16px;
-    margin: 32px 0 24px;
+    padding: 32px 0 24px;
 }
 
 .heroSection button {
@@ -48,10 +45,8 @@
     height: auto;
     width: auto;
     padding: 8px 16px;
-    font-family: "Fira Code", monospace;
     color: var(--white-color);
-    font-size: 16px;
-    font-weight: 500;
+    font: 500 16px "Fira Code", monospace;
     transition-duration: 0.3s
 }
 
@@ -69,11 +64,9 @@
 
 .heroImage>div {
     display: flex;
-    align-items: center;
+    max-width: 469px;
     gap: 10px;
     padding: 8px;
-    width: auto;
-    height: 21px;
     border: 1px solid var(--gray-color);
     font-size: 16px;
     font-weight: 500;
