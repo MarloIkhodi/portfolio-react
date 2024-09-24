@@ -9,14 +9,45 @@
 
 .portfolioContainer {
     background-color: var(--background-color);
-    display: flex;
-    flex-direction: column;
     font-family: "Fira Code", monospace;
 }
 
 .asideContainer {
-    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 74px;
     height: auto;
     margin: 0px auto;
+    color: var(--white-color);
+    font-size: 24px;
+}
+
+.topSide {
+    position: relative;
+    border: 1px solid var(--gray-color);
+    padding: 32px;
+    font-weight: 500;
+
+}
+
+.topSide img:first-of-type {
+    position: absolute;
+    top: -14.5px;
+    left: 11px;
+}
+
+.topSide img:last-of-type {
+    position: absolute;
+    bottom: -14.5px;
+    right: 11px;
+}
+
+.bottomSide {
+    position: relative;
+    border: 1px solid var(--gray-color);
+    border-top: none;
+    padding: 16px;
+    font-weight: 400;
+
 }
