@@ -10,20 +10,20 @@
 .portfolioContainer {
     background-color: var(--background-color);
     display: flex;
-    align-items: center;
     flex-direction: row;
     border-top: 1px solid #ABB2BF;
     font-family: "Fira Code", monospace;
 }
 
 .footerContainer {
-    width: 1025px;
+    width: 1024px;
     height: auto;
     padding: 32px 0px;
-    margin: 0px auto;
     display: flex;
     flex-direction: column;
     gap: 48px;
+    margin: 0px auto;
+
 }
 
 .footerSectionBot {
@@ -38,14 +38,6 @@
     display: flex;
     justify-content: space-between;
 
-}
-
-.footerSectionTop:first-child {
-    align-items: flex-start;
-}
-
-.footerSectionTop:last-child {
-    align-items: flex-end;
 }
 
 .footerSectionTop div:first-child {

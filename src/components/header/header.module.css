@@ -8,21 +8,19 @@
 }
 
 .portfolioContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: var(--background-color);
+    display: flex;
+    align-items: center;
     font-family: "Fira Code", monospace;
 }
 
 .headerContainer {
     width: 1024px;
-    height: 53px;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    padding-bottom: 8px;
+    padding: 32px 0 8px 0;
+    margin: 0px auto;
 }
 
 .headerContainer div {
@@ -46,7 +44,7 @@
 
 .headerNav {
     display: flex;
-    align-items: flex;
+    align-items: end;
     justify-content: center;
     gap: 32px;
 }
