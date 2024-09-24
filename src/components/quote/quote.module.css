@@ -10,14 +10,15 @@
 .portfolioContainer {
     background-color: var(--background-color);
     font-family: "Fira Code", monospace;
+    width: 100%;
+    display: flex;
 }
 
 .asideContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-bottom: 74px;
-    height: auto;
+    max-width: 1024px;
     margin: 0px auto;
     color: var(--white-color);
     font-size: 24px;
@@ -44,10 +45,10 @@
 }
 
 .bottomSide {
-    position: relative;
     border: 1px solid var(--gray-color);
     border-top: none;
     padding: 16px;
     font-weight: 400;
+    margin-left: auto;
 
 }
