@@ -7,7 +7,7 @@ export default function Quote() {
       <aside className={styles.asideContainer}>
         <div className={styles.topSide}>
           <img src={Quotation} alt="Quotes" />
-          <p>be alone, that is when ideas are born.</p>
+          <p>be alone, that is when ideas are born</p>
           <img src={Quotation} alt="Quotes" />
         </div>
         <div className={styles.bottomSide}>
