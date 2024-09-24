@@ -4,14 +4,14 @@
     --purple-color: #C778DD;
     --white-color: #FFFFFF;
     --gray-color: #ABB2BF;
-    --background-color: #2C3036;
+    --background-color: #282C33;
 }
 
 .portfolioContainer {
     background-color: var(--background-color);
     display: flex;
     flex-direction: row;
-    border-top: 1px solid #ABB2BF;
+    border-top: 1px solid var(--gray-color);
     font-family: "Fira Code", monospace;
 }
 

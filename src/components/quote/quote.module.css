@@ -4,5 +4,19 @@
     --purple-color: #C778DD;
     --white-color: #FFFFFF;
     --gray-color: #ABB2BF;
-    --background-color: #2C3036;
+    --background-color: #282C33;
+}
+
+.portfolioContainer {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    font-family: "Fira Code", monospace;
+}
+
+.asideContainer {
+    width: 1024px;
+    padding-bottom: 74px;
+    height: auto;
+    margin: 0px auto;
 }
