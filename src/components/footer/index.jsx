@@ -27,9 +27,6 @@ export default function Footer() {
               <a href="https://github.com/MarloIkhodi" target="_blank">
                 <img src={Github} alt="Github" />
               </a>
-              <a href="https://discord.com/users/marlonekk" target="_blank">
-                <img src={Discord} alt="Discord" />
-              </a>
             </div>
           </section>
         </section>
