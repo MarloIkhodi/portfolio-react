@@ -178,6 +178,10 @@ button:hover {
         margin: auto;
     }
 
+    .projects {
+        padding: 32px 0;
+    }
+
     .projectsBox>div,
     .projectsBox img {
         max-width: 328px;

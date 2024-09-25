@@ -15,7 +15,7 @@ export default function Projects({ completeapps = false, showAll = false }) {
                     </div>
                     <div className={styles.completeappsContainer}>
                         <h3>
-                            <span>#</span>complete-apps
+                            <span>#</span>complete-sites
                         </h3>
                     </div>
                 </>
