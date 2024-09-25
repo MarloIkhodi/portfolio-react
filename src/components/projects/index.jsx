@@ -36,7 +36,7 @@ export default function Projects({ completeapps = false, showAll = false }) {
                 <div className={styles.projectsBox}>
                     <div className={styles.supportVPN}>
                         <div className={styles.topText}>
-                            <img src={SiteImageTwo} alt="Site Image" />
+                            <img src={SiteImageOne} alt="Site Image" />
                             <p>HTML&nbsp;CSS&nbsp;React</p>
                         </div>
                         <div className={styles.bottomText}>
@@ -80,7 +80,7 @@ export default function Projects({ completeapps = false, showAll = false }) {
                     </div>
                     <div className={styles.relume}>
                         <div className={styles.topText}>
-                            <img src={SiteImageOne} alt="Site Image" />
+                            <img src={SiteImageTwo} alt="Site Image" />
                             <p>HTML&nbsp;CSS&nbsp;React</p>
                         </div>
                         <div className={styles.bottomText}>

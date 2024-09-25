@@ -91,8 +91,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 45px;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .projectsBox>div {
@@ -171,4 +169,19 @@ button:hover {
 }
 
 
-@media (max-width: 450px) {}
+@media (max-width: 450px) {
+    .projectsBox {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 45px;
+        margin: auto;
+    }
+
+    .projectsLine {
+        width: 90px;
+    }
+
+    .projectsContainer {
+        align-items: center;
+    }
+}
