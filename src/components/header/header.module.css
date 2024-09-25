@@ -93,3 +93,16 @@
 .contact span {
     color: var(--purple-color);
 }
+
+@media (max-width: 450px) {
+    .headerContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 0 24px 0;
+        gap: 16px;
+    }
+
+    .headerNav {
+        gap: 16px;
+    }
+}

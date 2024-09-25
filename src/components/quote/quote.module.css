@@ -41,3 +41,5 @@
     font-weight: 400;
     margin-left: auto;
 }
+
+@media (max-width: 450px) {}

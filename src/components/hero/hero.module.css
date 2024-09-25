@@ -88,3 +88,32 @@
     color: var(--purple-color);
     transition-duration: 0.3s;
 }
+
+@media (max-width: 450px) {
+    .heroContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .heroSection {
+        display: flex;
+        flex-direction: column;
+        max-width: 328px;
+        padding-top: 32px;
+    }
+
+    .heroSection button {
+        display: none;
+    }
+
+    .heroImage img {
+        max-width: 320px;
+    }
+
+    .heroImage div>p {
+        flex-direction: column;
+        max-width: 320px;
+    }
+}
