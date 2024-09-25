@@ -37,7 +37,7 @@ export default function AboutMe({
                     <p>Hello there! You can call me Marlo 🐻
                     </p>
                     <p>
-                        I’m a front-end developer in training based in São Paulo, Brazil. I
+                        I'm a front-end developer in training based in São Paulo, Brazil. I
                         specialize in creating responsive websites from scratch, elevating
                         them into modern, user-friendly web experiences.
                     </p>
