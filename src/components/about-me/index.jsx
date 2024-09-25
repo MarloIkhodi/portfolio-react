@@ -34,7 +34,7 @@ export default function AboutMe({
                     ) : (
                         <div className={styles.aboutOff}></div>
                     )}
-                    <p>Hello there! You can call me Marlo 🐻
+                    <p>Hello there! You can call me Marlo <span>🐻</span>
                     </p>
                     <p>
                         I'm a front-end developer in training based in São Paulo, Brazil. I

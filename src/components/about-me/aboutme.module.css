@@ -109,3 +109,67 @@
 .aboutOff {
     padding-top: 104px !important;
 }
+
+@media (max-width: 450px) {
+    .portfolioContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding-bottom: 56px;
+    }
+
+    .mainContainer {
+        display: flex;
+        flex-direction: column;
+        max-width: 328px;
+    }
+
+    .buttonContainer {
+        padding: 16px 0px 32px;
+    }
+
+    .mainContainer div:first-of-type {
+        max-width: 328px;
+
+    }
+
+    .mainContainer p {
+        max-width: 328px;
+        padding: 12px 0px;
+    }
+
+    .mainContainer p span {
+        display: none;
+    }
+
+    .mainContainer div:first-of-type div {
+        width: 150px;
+    }
+
+    .aboutContainer img {
+        max-width: 320px;
+    }
+
+    .buttonOff {
+        display: none;
+    }
+
+    .aboutOff {
+        display: none !important;
+    }
+
+    .aboutOutside {
+        max-width: 328px;
+        align-items: center;
+        gap: 0px;
+        padding: 32px 0px 16px;
+        align-items: start;
+    }
+
+}
