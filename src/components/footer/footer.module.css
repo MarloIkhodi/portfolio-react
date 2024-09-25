@@ -88,4 +88,9 @@
         align-items: center;
         gap: 16px;
     }
+
+    .footerSectionTop section:last-child>div {
+        display: flex;
+        justify-content: center;
+    }
 }
