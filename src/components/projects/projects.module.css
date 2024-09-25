@@ -55,6 +55,7 @@
 .projectsContainer {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     padding: 0px 0px 48px;
 }
