@@ -1,5 +1,5 @@
 import styles from "./footer.module.css";
-import { Github, Linkedin, Discord, Logotype } from "../../assets/images";
+import { Github, Linkedin, Logotype } from "../../assets/images";
 
 export default function Footer() {
   return (

@@ -1,4 +1,4 @@
-import { Hero, Quote } from "../../components";
+import { Hero, Quote, About } from "../../components";
 import styles from "./home.module.css";
 
 export default function Home() {
@@ -6,6 +6,7 @@ export default function Home() {
     <div className={styles.homeContainer}>
       <Hero />
       <Quote />
+      <About />
     </div>
   );
 }
