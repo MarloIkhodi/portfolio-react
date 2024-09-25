@@ -1,0 +1,174 @@
+.portfolioContainer {
+    background-color: var(--background-color);
+    font-family: "Fira Code", monospace;
+    width: 100%;
+    display: flex;
+}
+
+.portfolioContainer section {
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-bottom: 106px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 68px;
+    gap: 14px;
+}
+
+.projects h3 {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.projects span {
+    color: var(--purple-color);
+}
+
+.projects p {
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.completeappsContainer {
+    display: flex;
+    padding: 0px 0px 48px;
+}
+
+.completeappsContainer h3 {
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.completeappsContainer span {
+    color: var(--purple-color);
+}
+
+.projectsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 0px 48px;
+}
+
+.projectsContainer div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.projectsContainer h3 {
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.projectsContainer span {
+    color: var(--purple-color);
+}
+
+.projectsContainer p {
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.projectsLine {
+    height: 1px;
+    width: 511px;
+    background-color: var(--purple-color);
+}
+
+.projectsBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 45px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projectsBox>div {
+    border: 1px solid var(--gray-color);
+    border-bottom: none;
+    max-width: 331px;
+}
+
+.projectsBox>div>div {
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.projectsBox img {
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.projectsBox h4 {
+    color: var(--white-color);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.projectsBox p {
+    color: var(--gray-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.topText p {
+    padding: 8px;
+    line-height: 1;
+}
+
+.bottomText {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+.bottomText div {
+    display: flex;
+    gap: 16px;
+}
+
+button p {
+    height: auto;
+    width: auto;
+    padding: 8px 16px;
+    color: var(--white-color);
+    font: 500 16px "Fira Code", monospace;
+    transition-duration: 0.3s;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid var(--purple-color);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c778dd33;
+    transition-duration: 0.3s;
+}
+
+.gitHubButton {
+    border-color: var(--gray-color);
+}
+
+.gitHubButton p {
+    color: var(--gray-color);
+}
+
+.gitHubButton:hover {
+    background-color: #abb2bf33;
+}
+
+
+@media (max-width: 450px) {}

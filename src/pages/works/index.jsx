@@ -1,6 +1,8 @@
-import {} from "../../components";
+import { Projects } from "../../components";
 import styles from "./works.module.css";
 
 export default function Works() {
-  return <div className={styles.worksContainer}></div>;
+  return <div className={styles.worksContainer}>
+    <Projects completeapps showAll />
+  </div>;
 }
