@@ -1,0 +1,111 @@
+.portfolioContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    font-family: "Fira Code", monospace;
+}
+
+.aboutOutside {
+    display: flex;
+    flex-direction: column;
+    width: 1024px;
+    align-items: start;
+    gap: 14px;
+    padding-bottom: 8px;
+}
+
+.aboutOutside span {
+    color: var(--purple-color);
+}
+
+.aboutOutside h3 {
+    color: var(--white-color);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.aboutOutside p {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.aboutContainer {
+    width: 1024px;
+    padding-bottom: 112px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.mainContainer div:first-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 515px;
+    padding: 0px;
+
+}
+
+.mainContainer div:first-of-type h3 {
+    color: var(--white-color);
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.mainContainer div:first-of-type span {
+    color: var(--purple-color);
+}
+
+.mainContainer div:first-of-type div {
+    width: 325px;
+    background-color: var(--purple-color);
+    height: 1px;
+}
+
+.mainContainer p {
+    width: 515px;
+    color: var(--gray-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.buttonContainer {
+    padding-bottom: 67px;
+}
+
+.mainContainer button {
+    background-color: transparent;
+    border: 1px solid var(--purple-color);
+    cursor: pointer;
+}
+
+.mainContainer button p {
+    height: auto;
+    width: auto;
+    padding: 8px 16px;
+    color: var(--white-color);
+    font: 500 16px "Fira Code", monospace;
+    transition-duration: 0.3s;
+}
+
+.mainContainer button:hover {
+    background-color: #c778dd33;
+    transition-duration: 0.3s;
+
+}
+
+.buttonOff {
+    padding: 52px;
+}
+
+.aboutOff {
+    padding-top: 104px !important;
+}

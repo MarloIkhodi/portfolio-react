@@ -8,7 +8,6 @@
 
 .heroContainer {
     width: 1024px;
-    padding-top: 62px;
     padding-bottom: 112px;
     display: flex;
     justify-content: space-between;
@@ -47,7 +46,8 @@
     padding: 8px 16px;
     color: var(--white-color);
     font: 500 16px "Fira Code", monospace;
-    transition-duration: 0.3s
+    transition-duration: 0.3s;
+    cursor: pointer;
 }
 
 .heroSection button:hover {
