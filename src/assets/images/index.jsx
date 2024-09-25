@@ -7,3 +7,4 @@ export { default as Linkedin } from "./linkedin.svg";
 export { default as MenBlack } from "./men-black.svg";
 export { default as Rectangle } from "./rectangle.svg";
 export { default as Quotation } from "./quotation-marks.svg";
+export { default as HandFace } from "./handonface.svg"
