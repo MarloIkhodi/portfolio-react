@@ -1,6 +1,7 @@
 import styles from "./header.module.css";
 import { Logotype } from "../../assets/images";
 import { Link, useLocation } from "react-router-dom";
+import { Aside } from "../index"
 
 export default function Header() {
   const location = useLocation();
@@ -45,10 +46,13 @@ export default function Header() {
           </Link>
           {/* <button>
             <p>EN</p>
-            <img src={ChevronDown} alt="" />
+            <img src={} alt="" />
           </button> */}
+
         </nav>
+        <Aside />
       </header>
+
     </div>
   );
 }
