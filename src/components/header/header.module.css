@@ -94,7 +94,7 @@
     color: var(--purple-color);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .headerContainer {
         display: flex;
         flex-direction: column;

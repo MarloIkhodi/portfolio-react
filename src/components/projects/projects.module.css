@@ -169,7 +169,7 @@ button:hover {
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .projectsBox {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -177,11 +177,20 @@ button:hover {
         margin: auto;
     }
 
+    .projectsBox>div,
+    .projectsBox img {
+        max-width: 328px;
+    }
+
     .projectsLine {
-        width: 90px;
+        display: none !important;
     }
 
     .projectsContainer {
         align-items: center;
+    }
+
+    .portfolioContainer section {
+        max-width: 328px;
     }
 }

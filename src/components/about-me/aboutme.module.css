@@ -110,7 +110,7 @@
     padding-top: 104px !important;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .portfolioContainer {
         display: flex;
         flex-direction: column;

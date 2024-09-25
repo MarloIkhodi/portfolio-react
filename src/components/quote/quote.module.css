@@ -42,7 +42,7 @@
     margin-left: auto;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .asideContainer {
         padding-bottom: 56px;
         max-width: 320px;

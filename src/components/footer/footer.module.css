@@ -75,7 +75,7 @@
     height: 32px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .footerContainer {
         display: flex;
         flex-direction: column;
