@@ -42,6 +42,8 @@
     color: var(--white-color);
     font-size: 16px;
     font-weight: 500;
+    align-items: center;
+    display: flex;
 }
 
 .footerSectionTop section:first-child {
