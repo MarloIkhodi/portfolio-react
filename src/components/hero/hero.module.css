@@ -18,6 +18,7 @@
     font-size: 56px;
     line-height: 1.2;
     color: var(--white-color);
+    font-weight: 600;
 }
 
 .heroMain span {

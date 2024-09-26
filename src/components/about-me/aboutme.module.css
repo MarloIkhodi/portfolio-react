@@ -1,175 +1,123 @@
-.portfolioContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--background-color);
-    font-family: "Fira Code", monospace;
-}
-
-.aboutOutside {
-    display: flex;
-    flex-direction: column;
-    width: 1024px;
-    align-items: start;
-    gap: 14px;
-    padding-bottom: 8px;
-}
-
-.aboutOutside span {
-    color: var(--purple-color);
-}
-
-.aboutOutside h3 {
-    color: var(--white-color);
-    font-size: 32px;
-    font-weight: 600;
-}
-
-.aboutOutside p {
-    color: var(--white-color);
-    font-size: 16px;
-    font-weight: 400;
-}
-
 .aboutContainer {
-    width: 1024px;
-    padding-bottom: 112px;
+    width: 1440px;
     display: flex;
-    justify-content: space-between;
+    gap: 80px;
+    padding: 112px 0px;
 }
 
+.aboutContainer>img {
+    padding-right: 64px;
+}
+
+/* Container principal */
 .mainContainer {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
+    justify-content: center;
+    padding-left: 64px;
+    gap: 24px;
 }
 
-.mainContainer div:first-of-type {
+.mainContainer>p {
+    font-size: 18px;
+    color: var(--gray-color);
+    text-align: justify;
+}
+
+/* about-me da homepage */
+.aboutHome {
+    gap: 16px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 515px;
-    padding: 0px;
-
+    white-space: nowrap
 }
 
-.mainContainer div:first-of-type h3 {
+.aboutHome h3 {
     color: var(--white-color);
-    font-size: 32px;
-    font-weight: 500;
+    font-size: 48px;
+    font-weight: 600;
 }
 
-.mainContainer div:first-of-type span {
+.aboutHome span {
     color: var(--purple-color);
 }
 
-.mainContainer div:first-of-type div {
-    width: 325px;
+.aboutHomeLine {
     background-color: var(--purple-color);
     height: 1px;
+    flex-grow: 1;
 }
 
-.mainContainer p {
-    width: 515px;
-    color: var(--gray-color);
-    font-size: 16px;
-    font-weight: 400;
+/* about-me da about-me */
+.aboutMe {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
-.buttonContainer {
-    padding-bottom: 67px;
+.aboutMe h3 {
+    color: var(--white-color);
+    font-size: 48px;
+    font-weight: 600;
 }
 
+.aboutMe span {
+    color: var(--purple-color);
+}
+
+.aboutMe>p {
+    font-size: 18px;
+    color: var(--white-color);
+}
+
+/* Botão do container */
 .mainContainer button {
-    background-color: transparent;
     border: 1px solid var(--purple-color);
-    cursor: pointer;
-}
-
-.mainContainer button p {
-    height: auto;
-    width: auto;
-    padding: 8px 16px;
+    padding: 12px 24px;
     color: var(--white-color);
     font: 500 16px "Fira Code", monospace;
     transition-duration: 0.3s;
+    cursor: pointer;
 }
 
 .mainContainer button:hover {
     background-color: #c778dd33;
     transition-duration: 0.3s;
-
 }
 
-.buttonOff {
-    padding: 52px;
-}
-
-.aboutOff {
-    padding-top: 104px !important;
-}
-
+/* Dispositivo Movel */
 @media (max-width: 500px) {
-    .portfolioContainer {
-        display: flex;
-        flex-direction: column;
-    }
-
     .aboutContainer {
-        display: flex;
+        width: 375px;
+        padding: 64px 0;
         flex-direction: column;
         align-items: center;
-        width: auto;
-        padding-bottom: 56px;
+        gap: 48px;
     }
 
     .mainContainer {
-        display: flex;
-        flex-direction: column;
-        max-width: 328px;
+        gap: 20px;
+        padding: 0px 20px;
     }
 
-    .buttonContainer {
-        padding: 16px 0px 32px;
+    .mainContainer>p {
+        font-size: 16px;
     }
 
-    .mainContainer div:first-of-type {
-        max-width: 328px;
-
+    .aboutContainer>img {
+        max-width: 335px;
+        padding: 0px;
     }
 
-    .mainContainer p {
-        max-width: 328px;
-        padding: 12px 0px;
+    .aboutHome h3 {
+        font-size: 32px;
     }
 
-    .mainContainer p span {
-        display: none;
+    .aboutMe h3 {
+        font-size: 32px;
     }
 
-    .mainContainer div:first-of-type div {
-        width: 150px;
+    .aboutMe>p {
+        font-size: 16px;
     }
-
-    .aboutContainer img {
-        max-width: 320px;
-    }
-
-    .buttonOff {
-        display: none;
-    }
-
-    .aboutOff {
-        display: none !important;
-    }
-
-    .aboutOutside {
-        max-width: 328px;
-        align-items: center;
-        gap: 0px;
-        padding: 32px 0px 16px;
-        align-items: start;
-    }
-
 }

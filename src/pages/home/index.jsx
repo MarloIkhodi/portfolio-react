@@ -6,10 +6,9 @@ export default function Home() {
     <div className={styles.homeContainer}>
       <Hero />
       <Quote />
-      {/* <AboutMe
-        aboutInside
+      <AboutMe
         button />
-      <Projects /> */}
+      {/* <Projects /> */}
     </div>
   );
 }
