@@ -87,7 +87,7 @@ export default function Projects({ completeApps = false, showAllProjects = false
                                         </button>
                                     )}
                                     {gitHubUrl && (
-                                        <button onClick={() => openLink(gitHubUrl)}>
+                                        <button className={styles.gitHubButton} onClick={() => openLink(gitHubUrl)}>
                                             <p>GitHub &gt;=</p>
                                         </button>
                                     )}
