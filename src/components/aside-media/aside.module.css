@@ -4,15 +4,14 @@
     left: -122px;
     width: 32px;
     height: 271px;
-    gap: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 8px;
 }
 
 .asideLine {
     height: 191px;
     width: 1px;
     background-color: var(--gray-color);
-
 }

@@ -41,19 +41,15 @@
 .heroSection button {
     background-color: transparent;
     border: 1px solid var(--purple-color);
-    height: auto;
-    width: auto;
     padding: 8px 16px;
     color: var(--white-color);
     font: 500 16px "Fira Code", monospace;
-    transition-duration: 0.3s;
+    transition: background-color 0.3s;
     cursor: pointer;
 }
 
 .heroSection button:hover {
     background-color: #c778dd33;
-    transition-duration: 0.3s;
-
 }
 
 .heroImage {
@@ -76,7 +72,7 @@
 .heroImage div>p {
     display: flex;
     flex-direction: row;
-    transition-duration: 0.3s;
+    transition: color 0.3s;
 }
 
 .heroImage a {
@@ -84,14 +80,12 @@
     font-weight: 600;
 }
 
-.heroImage div>p :hover {
+.heroImage div>p:hover {
     color: var(--purple-color);
-    transition-duration: 0.3s;
 }
 
 @media (max-width: 500px) {
     .heroContainer {
-        display: flex;
         flex-direction: column;
         align-items: center;
         gap: 16px;
@@ -100,8 +94,6 @@
     }
 
     .heroSection {
-        display: flex;
-        flex-direction: column;
         max-width: 328px;
         padding-top: 32px;
     }
