@@ -1,121 +1,117 @@
-.portfolioContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--background-color);
-    font-family: "Fira Code", monospace;
-}
-
 .heroContainer {
-    width: 1024px;
-    padding-bottom: 112px;
+    width: 1440px;
     display: flex;
-    justify-content: space-between;
+    gap: 80px;
+    padding: 112px 0px;
 }
 
-.heroSection {
-    width: 537px;
+/* Esquerda do container principal */
+.heroMain {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    padding-top: 74px;
+    justify-content: center;
+    gap: 24px;
+    padding-left: 64px;
 }
 
-.heroSection h2 {
+.heroMain h2 {
+    font-size: 56px;
+    line-height: 1.2;
     color: var(--white-color);
-    font-weight: 600;
-    font-size: 32px;
 }
 
-.heroSection span {
+.heroMain span {
     color: var(--purple-color);
 }
 
-.heroSection>p {
+.heroMain>p {
+    font-size: 18px;
     color: var(--gray-color);
-    line-height: 25px;
-    font-size: 16px;
-    padding: 32px 0 24px;
 }
 
-.heroSection button {
-    background-color: transparent;
+/* Botão do container */
+.heroMain button {
     border: 1px solid var(--purple-color);
-    height: auto;
-    width: auto;
-    padding: 8px 16px;
+    padding: 12px 24px;
     color: var(--white-color);
     font: 500 16px "Fira Code", monospace;
     transition-duration: 0.3s;
     cursor: pointer;
 }
 
-.heroSection button:hover {
+.heroMain button:hover {
     background-color: #c778dd33;
     transition-duration: 0.3s;
-
 }
 
-.heroImage {
+/* Direita do container principal */
+.heroAside {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding-right: 64px;
 }
 
-.heroImage>div {
+/* Trabalhando em */
+.heroAside>div {
     display: flex;
     max-width: 469px;
-    gap: 10px;
-    padding: 8px;
+    padding: 12px;
     border: 1px solid var(--gray-color);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     color: var(--gray-color);
+    gap: 10px;
 }
 
-.heroImage div>p {
+.heroAside div>p {
     display: flex;
     flex-direction: row;
     transition-duration: 0.3s;
 }
 
-.heroImage a {
+.heroAside a {
     color: var(--white-color);
     font-weight: 600;
 }
 
-.heroImage div>p :hover {
+.heroAside div>p :hover {
     color: var(--purple-color);
     transition-duration: 0.3s;
 }
 
+/* Dispositivo Movel */
 @media (max-width: 500px) {
     .heroContainer {
-        display: flex;
+        width: 375px;
+        padding: 64px 0;
         flex-direction: column;
-        align-items: center;
-        gap: 16px;
-        width: auto;
-        padding-bottom: 56px;
+        gap: 48px;
     }
 
-    .heroSection {
-        display: flex;
+    .heroMain {
+        gap: 20px;
+        padding: 0px 20px;
+    }
+
+    .heroMain h2 {
+        font-size: 40px;
+    }
+
+    .heroMain>p {
+        font-size: 16px;
+    }
+
+    .heroAside {
+        padding: 0px 20px;
+    }
+
+    .heroAside img {
+        max-width: 335px;
+    }
+
+    .heroAside div>p {
         flex-direction: column;
-        max-width: 328px;
-        padding-top: 32px;
-    }
-
-    .heroSection button {
-        display: none;
-    }
-
-    .heroImage img {
-        max-width: 320px;
-    }
-
-    .heroImage div>p {
-        flex-direction: column;
-        max-width: 320px;
     }
 }

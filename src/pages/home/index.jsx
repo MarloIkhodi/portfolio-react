@@ -5,11 +5,11 @@ export default function Home() {
   return (
     <div className={styles.homeContainer}>
       <Hero />
-      <Quote />
+      {/* <Quote />
       <AboutMe
         aboutInside
         button />
-      <Projects />
+      <Projects /> */}
     </div>
   );
 }

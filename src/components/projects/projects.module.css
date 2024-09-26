@@ -138,7 +138,7 @@
     gap: 16px;
 }
 
-button p {
+.bottomText button p {
     height: auto;
     width: auto;
     padding: 8px 16px;
@@ -147,27 +147,27 @@ button p {
     transition-duration: 0.3s;
 }
 
-button {
+.bottomText button {
     background-color: transparent;
     border: 1px solid var(--purple-color);
     cursor: pointer;
 }
 
-button:hover {
+.bottomText button:hover {
     background-color: #c778dd33;
     transition-duration: 0.3s;
 }
 
 .gitHubButton {
-    border-color: var(--gray-color);
+    border-color: var(--gray-color) !important;
 }
 
 .gitHubButton p {
-    color: var(--gray-color);
+    color: var(--gray-color) !important;
 }
 
 .gitHubButton:hover {
-    background-color: #abb2bf33;
+    background-color: #abb2bf33 !important;
 }
 
 @media (max-width: 500px) {

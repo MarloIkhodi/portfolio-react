@@ -1,7 +1,7 @@
 .asideMedia {
     position: absolute;
     top: 0;
-    left: -122px;
+    left: -32px;
     width: 32px;
     height: 271px;
     display: flex;
@@ -14,4 +14,11 @@
     height: 191px;
     width: 1px;
     background-color: var(--gray-color);
+}
+
+/* Dispositivo Movel */
+@media (max-width: 500px) {
+    .asideMedia {
+        display: none;
+    }
 }
