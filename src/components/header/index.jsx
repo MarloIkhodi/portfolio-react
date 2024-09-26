@@ -8,51 +8,44 @@ export default function Header() {
   // console.log(location.pathname);
   const current = location.pathname.replace(/\//g, "");
   return (
-    <div className={styles.portfolioContainer}>
-      <header className={styles.headerContainer}>
-        <div>
-          <img src={Logotype} alt="Logotype" />
-          <h1>Marlo, the front-end dev</h1>
-        </div>
-        <nav className={styles.headerNav}>
-          <Link to="/" className={current === "" ? styles.home : null}>
-            <p>
-              <span>#</span>home
-            </p>
-          </Link>
-          <Link
-            to="/work"
-            className={current === "work" ? styles[current] : null}
-          >
-            <p>
-              <span>#</span>works
-            </p>
-          </Link>
-          <Link
-            to="/about"
-            className={current === "about" ? styles[current] : null}
-          >
-            <p>
-              <span>#</span>about-me
-            </p>
-          </Link>
-          <Link
-            to="/contact"
-            className={current === "contact" ? styles[current] : null}
-          >
-            <p>
-              <span>#</span>contact
-            </p>
-          </Link>
-          {/* <button>
+    <header className={styles.headerContainer}>
+      <h1> <img src={Logotype} alt="Logotype" />Marlo, the front-end dev</h1>
+      <nav className={styles.headerNav}>
+        <Link to="/" className={current === "" ? styles.home : null}>
+          <p>
+            <span>#</span>home
+          </p>
+        </Link>
+        <Link
+          to="/work"
+          className={current === "work" ? styles[current] : null}
+        >
+          <p>
+            <span>#</span>works
+          </p>
+        </Link>
+        <Link
+          to="/about"
+          className={current === "about" ? styles[current] : null}
+        >
+          <p>
+            <span>#</span>about-me
+          </p>
+        </Link>
+        <Link
+          to="/contact"
+          className={current === "contact" ? styles[current] : null}
+        >
+          <p>
+            <span>#</span>contact
+          </p>
+        </Link>
+        {/* <button>
             <p>EN</p>
             <img src={} alt="" />
           </button> */}
-
-        </nav>
-        <Aside />
-      </header>
-
-    </div>
+      </nav>
+      <Aside />
+    </header>
   );
 }
