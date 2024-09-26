@@ -8,7 +8,7 @@ export default function Home() {
       <Quote />
       <AboutMe
         button />
-      {/* <Projects /> */}
+      <Projects />
     </div>
   );
 }

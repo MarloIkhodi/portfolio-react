@@ -1,11 +1,18 @@
-import { SiteImageOne, SiteImageTwo, SiteImageThree, SiteImageFour } from "../../assets/images";
+import {
+    SiteImageOne,
+    SiteImageTwo,
+    SiteImageThree,
+    SiteImageFour,
+} from "../../assets/images";
 import { Link } from "react-router-dom";
-import styles from "./projects.module.css"
+import styles from "./projects.module.css";
 
-const openLink = (url) => window.open(url, "_blank")
+const openLink = (url) => window.open(url, "_blank");
 
-export default function Projects({ completeApps = false, showAllProjects = false }) {
-
+export default function Projects({
+    completeApps = false,
+    showAllProjects = false,
+}) {
     const projects = [
         {
             title: "SupportVPN",
@@ -14,7 +21,8 @@ export default function Projects({ completeApps = false, showAllProjects = false
             liveUrl: "https://support-vpn-dun.vercel.app/",
             gitHubUrl: "https://github.com/MarloIkhodi/support-vpn",
             image: SiteImageOne,
-        }, {
+        },
+        {
             title: "Portfolio",
             description: "You're using it right now",
             technologies: "HTML CSS React",
@@ -29,7 +37,8 @@ export default function Projects({ completeApps = false, showAllProjects = false
             liveUrl: "https://react-course-psi-eight.vercel.app/",
             gitHubUrl: "https://github.com/MarloIkhodi/react-course",
             image: SiteImageThree,
-        }, {
+        },
+        {
             title: "Android Curiosity",
             description: "Android history page",
             technologies: "HTML CSS",
@@ -37,26 +46,25 @@ export default function Projects({ completeApps = false, showAllProjects = false
             gitHubUrl: "https://github.com/MarloIkhodi/html-css",
             image: SiteImageFour,
         },
-    ]
+    ];
 
-    const visibleProjects = showAllProjects ? projects : projects.slice(0, 3)
+    const visibleProjects = showAllProjects ? projects : projects.slice(0, 3);
 
     return (
         <div className={styles.portfolioContainer}>
             <section>
-                {completeApps ? (<>
+                {completeApps ? (
                     <div className={styles.projects}>
-                        <h3>
-                            <span>/</span>projects
-                        </h3>
-                        <p>List of my projects</p>
-                    </div>
-                    <div className={styles.completeappsContainer}>
-                        <h3>
+                        <div>
+                            <h3>
+                                <span>/</span>projects
+                            </h3>
+                            <p>List of my projects</p>
+                        </div>
+                        <h4>
                             <span>#</span>complete-sites
-                        </h3>
+                        </h4>
                     </div>
-                </>
                 ) : (
                     <div className={styles.projectsContainer}>
                         <div>
@@ -71,30 +79,38 @@ export default function Projects({ completeApps = false, showAllProjects = false
                     </div>
                 )}
                 <div className={styles.projectsBox}>
-                    {visibleProjects.map(({ title, description, technologies, liveUrl, gitHubUrl, image }, index) => (
-                        <div key={title} className={styles.projectItem}>
-                            <div className={styles.topText}>
-                                <img src={image} alt={`Screenshot of ${title} project`} />
-                                <p>{technologies}</p>
-                            </div>
-                            <div className={styles.bottomText}>
-                                <h4>{title}</h4>
-                                <p>{description}</p>
-                                <div>
-                                    {liveUrl && (
-                                        <button onClick={() => openLink(liveUrl)}>
-                                            <p>Live&lt;~&gt;</p>
-                                        </button>
-                                    )}
-                                    {gitHubUrl && (
-                                        <button className={styles.gitHubButton} onClick={() => openLink(gitHubUrl)}>
-                                            <p>GitHub &gt;=</p>
-                                        </button>
-                                    )}
+                    {visibleProjects.map(
+                        (
+                            { title, description, technologies, liveUrl, gitHubUrl, image },
+                            index
+                        ) => (
+                            <div key={title} className={styles.projectItem}>
+                                <div className={styles.topText}>
+                                    <img src={image} alt={`Screenshot of ${title} project`} />
+                                    <p>{technologies}</p>
+                                </div>
+                                <div className={styles.bottomText}>
+                                    <h4>{title}</h4>
+                                    <p>{description}</p>
+                                    <div>
+                                        {liveUrl && (
+                                            <button onClick={() => openLink(liveUrl)}>
+                                                <p>Live&lt;~&gt;</p>
+                                            </button>
+                                        )}
+                                        {gitHubUrl && (
+                                            <button
+                                                className={styles.gitHubButton}
+                                                onClick={() => openLink(gitHubUrl)}
+                                            >
+                                                <p>GitHub &gt;=</p>
+                                            </button>
+                                        )}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        )
+                    )}
                 </div>
             </section>
         </div>
