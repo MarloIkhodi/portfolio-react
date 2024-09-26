@@ -1,12 +1,50 @@
-import { SiteImageTwo, SiteImageOne, SiteImageThree, SiteImageFour, } from "../../assets/images";
-import styles from "./projects.module.css";
+import { SiteImageOne, SiteImageTwo, SiteImageThree, SiteImageFour } from "../../assets/images";
 import { Link } from "react-router-dom";
+import styles from "./projects.module.css"
 
-export default function Projects({ completeapps = false, showAll = false }) {
+const openLink = (url) => window.open(url, "_blank")
+
+export default function Projects({ completeApps = false, showAllProjects = false }) {
+
+    const projects = [
+        {
+            title: "SupportVPN",
+            description: "Landing Page for SupportVPN",
+            technologies: "HTML CSS React",
+            liveUrl: "https://support-vpn-dun.vercel.app/",
+            gitHubUrl: "https://github.com/MarloIkhodi/support-vpn",
+            image: SiteImageOne,
+        }, {
+            title: "Portfolio",
+            description: "You're using it right now",
+            technologies: "HTML CSS React",
+            liveUrl: "",
+            gitHubUrl: "https://github.com/MarloIkhodi/portfolio-react",
+            image: SiteImageTwo,
+        },
+        {
+            title: "Relume",
+            description: "Landing Page based in Relume",
+            technologies: "HTML CSS React",
+            liveUrl: "https://react-course-psi-eight.vercel.app/",
+            gitHubUrl: "https://github.com/MarloIkhodi/react-course",
+            image: SiteImageThree,
+        }, {
+            title: "Android Curiosity",
+            description: "Android history page",
+            technologies: "HTML CSS",
+            liveUrl: "https://html-css-five-pi.vercel.app/",
+            gitHubUrl: "https://github.com/MarloIkhodi/html-css",
+            image: SiteImageFour,
+        },
+    ]
+
+    const visibleProjects = showAllProjects ? projects : projects.slice(0, 3)
+
     return (
         <div className={styles.portfolioContainer}>
             <section>
-                {completeapps ? (<>
+                {completeApps ? (<>
                     <div className={styles.projects}>
                         <h3>
                             <span>/</span>projects
@@ -28,100 +66,35 @@ export default function Projects({ completeapps = false, showAll = false }) {
                             <div className={styles.projectsLine}></div>
                         </div>
                         <Link to="/work" onClick={() => window.scrollTo(0, 0)}>
-                            {" "}
                             <p>View all ~~&gt;</p>
                         </Link>
                     </div>
                 )}
                 <div className={styles.projectsBox}>
-                    <div className={styles.supportVPN}>
-                        <div className={styles.topText}>
-                            <img src={SiteImageOne} alt="Site Image" />
-                            <p>HTML&nbsp;CSS&nbsp;React</p>
-                        </div>
-                        <div className={styles.bottomText}>
-                            <h4>SupportVPN</h4>
-                            <p>Landing Page for SupportVPN</p>
-                            <div>
+                    {visibleProjects.map(({ title, description, technologies, liveUrl, gitHubUrl, image }, index) => (
+                        <div key={title} className={styles.projectItem}>
+                            <div className={styles.topText}>
+                                <img src={image} alt={`Screenshot of ${title} project`} />
+                                <p>{technologies}</p>
+                            </div>
+                            <div className={styles.bottomText}>
+                                <h4>{title}</h4>
+                                <p>{description}</p>
                                 <div>
-                                    <button onClick={() => window.open('https://support-vpn-dun.vercel.app/', '_blank')}>
-                                        <p>Live&lt;~&gt;</p>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button className={styles.gitHubButton} onClick={() => window.open('https://github.com/MarloIkhodi/support-vpn', '_blank')}>
-                                        <p>GitHub &gt;=</p>
-                                    </button>
+                                    {liveUrl && (
+                                        <button onClick={() => openLink(liveUrl)}>
+                                            <p>Live&lt;~&gt;</p>
+                                        </button>
+                                    )}
+                                    {gitHubUrl && (
+                                        <button onClick={() => openLink(gitHubUrl)}>
+                                            <p>GitHub &gt;=</p>
+                                        </button>
+                                    )}
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={styles.portfolio}>
-                        <div className={styles.topText}>
-                            <img src={SiteImageFour} alt="Site Image" />
-                            <p>HTML&nbsp;CSS&nbsp;React</p>
-                        </div>
-                        <div className={styles.bottomText}>
-                            <h4>Portfolio</h4>
-                            <p>You're using it right now</p>
-                            <div>
-                                {/* <div>
-                                    <button onClick={() => window.open('https://portfolio-react-two-ecru.vercel.app/', '_blank')}>
-                                        <p>Live&lt;~&gt;</p>
-                                    </button>
-                                </div> */}
-                                <div>
-                                    <button className={styles.gitHubButton} onClick={() => window.open('https://github.com/MarloIkhodi/portfolio-react', '_blank')}>
-                                        <p>GitHub &gt;=</p>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.relume}>
-                        <div className={styles.topText}>
-                            <img src={SiteImageTwo} alt="Site Image" />
-                            <p>HTML&nbsp;CSS&nbsp;React</p>
-                        </div>
-                        <div className={styles.bottomText}>
-                            <h4>Relume</h4>
-                            <p>Landing Page based in Relume</p>
-                            <div>
-                                <div>
-                                    <button onClick={() => window.open('https://react-course-psi-eight.vercel.app/', '_blank')}>
-                                        <p>Live&lt;~&gt;</p>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button className={styles.gitHubButton} onClick={() => window.open('https://github.com/MarloIkhodi/react-course', '_blank')}>
-                                        <p>GitHub &gt;=</p>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {showAll ? <div className={styles.android}>
-                        <div className={styles.topText}>
-                            <img src={SiteImageThree} alt="Site Image" />
-                            <p>HTML&nbsp;CSS</p>
-                        </div>
-                        <div className={styles.bottomText}>
-                            <h4>Android Curiosity</h4>
-                            <p>Android history page</p>
-                            <div>
-                                <div>
-                                    <button onClick={() => window.open('https://html-css-five-pi.vercel.app/', '_blank')}>
-                                        <p>Live&lt;~&gt;</p>
-                                    </button>
-                                </div>
-                                <div>
-                                    <button className={styles.gitHubButton} onClick={() => window.open('https://github.com/MarloIkhodi/html-css', '_blank')}>
-                                        <p>GitHub &gt;=</p>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div> : null}
+                    ))}
                 </div>
             </section>
         </div>
