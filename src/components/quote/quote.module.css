@@ -1,27 +1,26 @@
 .portfolioContainer {
-    background-color: var(--background-color);
-    font-family: "Fira Code", monospace;
-    width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 .asideContainer {
     display: flex;
     flex-direction: column;
-    padding-bottom: 74px;
-    max-width: 1024px;
-    margin: 0 auto;
+    max-width: 1312px;
     color: var(--white-color);
     font-size: 24px;
+    padding: 112px 0px;
 }
 
+/* Quadrado de cima */
 .topSide {
     border: 1px solid var(--gray-color);
-    padding: 32px;
+    padding: 32px 48px;
     font-weight: 500;
     position: relative;
 }
 
+/* Quotations */
 .topSide img:first-of-type {
     position: absolute;
     top: -14.5px;
@@ -34,18 +33,28 @@
     right: 11px;
 }
 
+/* Quadrado de baixo */
 .bottomSide {
     border: 1px solid var(--gray-color);
     border-top: none;
-    padding: 16px;
+    padding: 16px 24px;
     font-weight: 400;
     margin-left: auto;
 }
 
+/* Dispositivo Movel */
 @media (max-width: 500px) {
     .asideContainer {
-        padding-bottom: 56px;
-        max-width: 320px;
+        padding: 64px 0;
+        max-width: 335px;
         font-size: 18px;
+    }
+
+    .topSide {
+        padding: 24px 32px;
+    }
+
+    .bottomSide {
+        padding: 12px 16px;
     }
 }

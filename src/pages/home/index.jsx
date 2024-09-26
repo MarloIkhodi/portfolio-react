@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <div className={styles.homeContainer}>
       <Hero />
-      {/* <Quote />
-      <AboutMe
+      <Quote />
+      {/* <AboutMe
         aboutInside
         button />
       <Projects /> */}
