@@ -40,10 +40,6 @@ export default function Header() {
             <span>#</span>contact
           </p>
         </Link>
-        {/* <button>
-            <p>EN</p>
-            <img src={} alt="" />
-          </button> */}
       </nav>
       <Aside />
     </header>
