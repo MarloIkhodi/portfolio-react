@@ -1,4 +1,4 @@
-import { Hero, Quote, AboutMe, Projects } from "../../components";
+import { Hero, Quote, AboutMe, Projects, Contacts } from "../../components";
 import styles from "./home.module.css";
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
       <Projects />
       <AboutMe
         button />
+      <Contacts />
     </div>
   );
 }

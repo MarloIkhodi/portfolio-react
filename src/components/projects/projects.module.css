@@ -50,8 +50,13 @@
     gap: 80px;
 }
 
-.projects h3,
-h4 {
+.projects h3 {
+    color: var(--white-color);
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.projects h4 {
     color: var(--white-color);
     font-size: 48px;
     font-weight: 600;

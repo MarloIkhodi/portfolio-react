@@ -1,0 +1,139 @@
+.contactsContainer {
+    width: 1440px;
+    display: flex;
+    gap: 80px;
+    padding: 112px 0px;
+}
+
+/* Texto da esquerda */
+.leftContacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 64px;
+}
+
+.leftContacts>p {
+    font-size: 18px;
+    color: var(--gray-color);
+    text-align: justify;
+}
+
+/* Caixa na Homepage */
+.contactsHome {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap
+}
+
+.contactsHome h3 {
+    color: var(--white-color);
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.contactsHome span {
+    color: var(--purple-color);
+}
+
+.contactsLine {
+    background-color: var(--purple-color);
+    height: 1px;
+    flex-grow: 1;
+}
+
+/* Caixa na Contact */
+.contactsPage {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactsPage h3 {
+    color: var(--white-color);
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.contactsPage span {
+    color: var(--purple-color);
+}
+
+.contactsPage>p {
+    font-size: 18px;
+    color: var(--white-color);
+}
+
+/* Caixa de contatos */
+.contactsContainer>aside {
+    margin-right: 64px;
+    border: 1px solid var(--gray-color);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+}
+
+.contactsContainer>aside h4 {
+    color: var(--white-color);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.contactsContainer>aside p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--gray-color);
+    font-size: 18px;
+}
+
+@media (max-width: 500px) {
+    .contactsContainer {
+        width: 375px;
+        padding: 64px 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .contactsPage h3 {
+        font-size: 32px;
+    }
+
+    .contactsPage p {
+        font-size: 16px;
+    }
+
+    .contactsHome h3 {
+        font-size: 32px;
+    }
+
+    .leftContacts {
+        gap: 20px;
+        padding: 0px 20px;
+    }
+
+    .leftContacts>p {
+        font-size: 16px;
+    }
+
+    .contactsContainer>aside {
+        margin-right: 0px;
+        min-width: 285px;
+    }
+
+    .contactsLine {
+        display: none;
+    }
+
+    .contactsContainer>aside p {
+        font-size: 16px;
+    }
+
+    .contactsContainer>aside p {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
