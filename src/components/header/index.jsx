@@ -56,31 +56,22 @@ export default function Header() {
       </header>
       {isOpen && (
         <nav className={styles.navMobile}>
-          <Link to="/" className={current === "" ? styles.home : null}>
+          <Link to="/" onClick={() => setIsOpen(false)} className={current === "" ? styles.home : null}>
             <p>
               <span>#</span>home
             </p>
           </Link>
-          <Link
-            to="/work"
-            className={current === "work" ? styles[current] : null}
-          >
+          <Link to="/work" onClick={() => setIsOpen(false)} className={current === "work" ? styles[current] : null}>
             <p>
               <span>#</span>works
             </p>
           </Link>
-          <Link
-            to="/about"
-            className={current === "about" ? styles[current] : null}
-          >
+          <Link to="/about" onClick={() => setIsOpen(false)} className={current === "about" ? styles[current] : null}>
             <p>
               <span>#</span>about-me
             </p>
           </Link>
-          <Link
-            to="/contact"
-            className={current === "contact" ? styles[current] : null}
-          >
+          <Link to="/contact" onClick={() => setIsOpen(false)} className={current === "contact" ? styles[current] : null}>
             <p>
               <span>#</span>contact
             </p>
