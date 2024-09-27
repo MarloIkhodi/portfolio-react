@@ -105,7 +105,7 @@
         flex-direction: column;
         align-items: flex-end;
         width: 375px;
-        gap: 40px;
+        gap: 32px;
         position: absolute;
         top: 69px;
         background-color: var(--background-color);
@@ -116,8 +116,8 @@
     .navMobile p {
         padding: 20px 20px;
         color: var(--gray-color);
-        font-weight: 400;
-        font-size: 24px;
+        font-weight: 600;
+        font-size: 32px;
     }
 
     .navMobile span {
