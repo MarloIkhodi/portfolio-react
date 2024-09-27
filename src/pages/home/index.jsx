@@ -6,9 +6,9 @@ export default function Home() {
     <div className={styles.homeContainer}>
       <Hero />
       <Quote />
+      <Projects />
       <AboutMe
         button />
-      <Projects />
     </div>
   );
 }
