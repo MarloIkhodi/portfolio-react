@@ -51,68 +51,66 @@ export default function Projects({
     const visibleProjects = showAllProjects ? projects : projects.slice(0, 3);
 
     return (
-        <div className={styles.portfolioContainer}>
-            <section>
-                {completeApps ? (
-                    <div className={styles.projects}>
-                        <div>
-                            <h3>
-                                <span>/</span>projects
-                            </h3>
-                            <p>List of my projects</p>
-                        </div>
-                        <h4>
-                            <span>#</span>complete-sites
-                        </h4>
+        <section className={styles.projectsContainer}>
+            {completeApps ? (
+                <div className={styles.projects}>
+                    <div>
+                        <h3>
+                            <span>/</span>projects
+                        </h3>
+                        <p>List of my projects</p>
                     </div>
-                ) : (
-                    <div className={styles.projectsContainer}>
-                        <div>
-                            <h3>
-                                <span>#</span>projects
-                            </h3>
-                            <div className={styles.projectsLine}></div>
-                        </div>
-                        <Link to="/work" onClick={() => window.scrollTo(0, 0)}>
-                            <p>View all ~~&gt;</p>
-                        </Link>
+                    <h4>
+                        <span>#</span>complete-sites
+                    </h4>
+                </div>
+            ) : (
+                <div className={styles.projectsHome}>
+                    <div className={styles.projectsTitle}>
+                        <h3>
+                            <span>#</span>projects
+                        </h3>
+                        <div className={styles.projectsLine}></div>
                     </div>
-                )}
-                <div className={styles.projectsBox}>
-                    {visibleProjects.map(
-                        (
-                            { title, description, technologies, liveUrl, gitHubUrl, image },
-                            index
-                        ) => (
-                            <div key={title} className={styles.projectItem}>
-                                <div className={styles.topText}>
-                                    <img src={image} alt={`Screenshot of ${title} project`} />
-                                    <p>{technologies}</p>
-                                </div>
-                                <div className={styles.bottomText}>
-                                    <h4>{title}</h4>
-                                    <p>{description}</p>
-                                    <div>
-                                        {liveUrl && (
-                                            <button onClick={() => openLink(liveUrl)}>
-                                                <p>Live&lt;~&gt;</p>
-                                            </button>
-                                        )}
-                                        {gitHubUrl && (
-                                            <button
-                                                className={styles.gitHubButton}
-                                                onClick={() => openLink(gitHubUrl)}
-                                            >
-                                                <p>GitHub &gt;=</p>
-                                            </button>
-                                        )}
-                                    </div>
+                    <Link to="/work" onClick={() => window.scrollTo(0, 0)}>
+                        <p>View all ~~&gt;</p>
+                    </Link>
+                </div>
+            )}
+            <div className={styles.projectsBox}>
+                {visibleProjects.map(
+                    (
+                        { title, description, technologies, liveUrl, gitHubUrl, image },
+                        index
+                    ) => (
+                        <div key={title} className={styles.projectItem}>
+                            <div className={styles.topText}>
+                                <img src={image} alt={`Screenshot of ${title} project`} />
+                                <p>{technologies}</p>
+                            </div>
+                            <div className={styles.bottomText}>
+                                <h4>{title}</h4>
+                                <p>{description}</p>
+                                <div>
+                                    {liveUrl && (
+                                        <button onClick={() => openLink(liveUrl)}>
+                                            <p>Live&lt;~&gt;</p>
+                                        </button>
+                                    )}
+                                    {gitHubUrl && (
+                                        <button
+                                            className={styles.gitHubButton}
+                                            onClick={() => openLink(gitHubUrl)}
+                                        >
+                                            <p>GitHub &gt;=</p>
+                                        </button>
+                                    )}
                                 </div>
                             </div>
-                        )
-                    )}
-                </div>
-            </section>
-        </div>
+                        </div>
+                    )
+                )}
+            </div>
+        </section>
     );
 }

@@ -1,0 +1,211 @@
+.projectsContainer {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 112px 0px;
+}
+
+/* Titulo do projects na home */
+.projectsHome {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    padding: 0 64px;
+}
+
+.projectsHome p {
+    font-size: 24px;
+    color: var(--white-color);
+}
+
+.projectsTitle {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-grow: 1;
+}
+
+.projectsTitle h3 {
+    color: var(--white-color);
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.projectsTitle span {
+    color: var(--purple-color);
+}
+
+.projectsLine {
+    background-color: var(--purple-color);
+    height: 1px;
+    flex-grow: 1;
+}
+
+/* Titulo do projects na projects */
+.projects {
+    display: flex;
+    flex-direction: column;
+    padding: 0 64px;
+    gap: 80px;
+}
+
+.projects h3,
+h4 {
+    color: var(--white-color);
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.projects span {
+    color: var(--purple-color);
+}
+
+.projects>div {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.projects p {
+    font-size: 24px;
+    color: var(--white-color);
+}
+
+/* Card da pagina */
+.projectsBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    padding: 0 64px;
+}
+
+.projectsBox p {
+    color: var(--gray-color);
+    font-size: 18px;
+}
+
+/* Borda do card */
+.projectItem {
+    border: 1px solid var(--gray-color);
+}
+
+/* Borda de baixo da imagem */
+.projectItem img {
+    border-bottom: 1px solid var(--gray-color);
+}
+
+/* Texto da parte de cima do card */
+.topText p {
+    padding: 8px 24px;
+    padding-top: 4px;
+    border-bottom: 1px solid var(--gray-color)
+}
+
+/* Texto da parte de baixo do card */
+.bottomText {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+}
+
+.bottomText h4 {
+    color: var(--white-color);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.bottomText div {
+    display: flex;
+    gap: 24px;
+}
+
+/* Botões do card */
+.bottomText button {
+    border: 1px solid var(--purple-color);
+    padding: 12px 24px;
+    color: var(--white-color);
+    font: 500 16px "Fira Code", monospace;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.bottomText button:hover {
+    background-color: #c778dd33;
+    transition-duration: 0.3s;
+}
+
+/* Botões do Github */
+.gitHubButton {
+    border-color: var(--gray-color) !important;
+}
+
+.gitHubButton p {
+    color: var(--gray-color) !important;
+}
+
+.gitHubButton:hover {
+    background-color: #abb2bf33 !important;
+}
+
+/* Dispositivo Movel */
+@media (max-width: 500px) {
+    .projectsContainer {
+        width: 375px;
+        padding: 64px 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
+
+    /* Title na home */
+    .projectsTitle h3 {
+        font-size: 32px;
+    }
+
+    .projectsHome {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        padding: 0 20px;
+        width: 335px;
+    }
+
+    .projectsHome p {
+        font-size: 16px;
+    }
+
+    /* Title na projects */
+    .projects {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        padding: 0 20px;
+        width: 335px;
+    }
+
+    .projects p {
+        font-size: 16px;
+    }
+
+    .projects h3,
+    h4 {
+        font-size: 32px;
+    }
+
+    /* Card */
+    .projectsBox {
+        grid-template-columns: 1fr;
+        padding: 0px 20px;
+    }
+
+    .projectsBox p {
+        font-size: 16px;
+    }
+
+    .topText img {
+        width: 333px;
+    }
+}
