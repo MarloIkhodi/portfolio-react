@@ -100,13 +100,16 @@
         padding: 0px 20px;
     }
 
+    .mainContainer>p>span {
+        display: none;
+    }
+
     .mainContainer>p {
         font-size: 16px;
     }
 
     .aboutContainer>img {
-        max-width: 335px;
-        padding: 0px;
+        display: none;
     }
 
     .aboutHome h3 {
