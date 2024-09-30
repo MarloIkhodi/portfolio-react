@@ -1,4 +1,4 @@
-import { AboutMe } from "../../components";
+import { AboutMe, Skills } from "../../components";
 import styles from "./about.module.css";
 
 export default function About() {
@@ -6,6 +6,7 @@ export default function About() {
     <div className={styles.aboutContainer}>
       <AboutMe
         aboutOutside />
+      <Skills />
     </div>
   );
 }

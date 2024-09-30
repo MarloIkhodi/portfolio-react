@@ -10,7 +10,7 @@
 .projectsHome {
     display: flex;
     align-items: center;
-    gap: 200px;
+    gap: 80px;
     padding: 0 64px;
 }
 

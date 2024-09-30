@@ -1,0 +1,126 @@
+.skillsContainer {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    padding: 112px 0px;
+    gap: 80px;
+}
+
+/* parte de cima e de baixo do container */
+.skillsContainer>div {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 64px;
+}
+
+/* parte de cima do container */
+.skillsContainer>div:nth-child(1) {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap
+}
+
+.skillsContainer>div:nth-child(1) h3 {
+    color: var(--white-color);
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.skillsContainer>div:nth-child(1) span {
+    color: var(--purple-color);
+}
+
+.skillsLine {
+    background-color: var(--purple-color);
+    height: 1px;
+    flex-grow: 1;
+}
+
+/* parte de baixo do container */
+.cardsBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 32px
+}
+
+.cardsBox>div {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.cardsBox>div>div {
+    border: 1px solid var(--gray-color);
+}
+
+/* Textos dos Cards */
+.cardsBox>div>div>p {
+    font-size: 18px;
+    color: var(--gray-color);
+    width: 222px;
+    padding: 24px;
+}
+
+.cardsBox>div>div>h4 {
+    color: var(--white-color);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+    border-bottom: 1px solid var(--gray-color);
+    padding: 24px;
+}
+
+/* Na About-me page */
+.cardsSkills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardsSkills>div {
+    flex-direction: row;
+}
+
+@media (max-width: 500px) {
+    .skillsContainer {
+        width: 375px;
+        padding: 64px 0;
+        flex-direction: column;
+        align-items: start;
+        gap: 48px;
+    }
+
+    .skillsContainer>div {
+        padding: 0px 20px;
+    }
+
+    .skillsContainer img {
+        display: none;
+    }
+
+    .cardsBox {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .skillsLine {
+        display: none;
+    }
+
+    .cardsBox>div {
+        min-width: 335px;
+        flex-direction: column;
+    }
+
+    .cardsBox>div>div>p {
+        width: 285px;
+    }
+
+    .skillsContainer>div:nth-child(1) h3 {
+        font-size: 32px;
+    }
+}
